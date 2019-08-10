@@ -15,8 +15,8 @@ now = time.time()
 
 for i, x in enumerate(arrx):
     for j, y in enumerate(x):
-        for yy in range(y):
-            tx = now -  24*3600 * (i*7+j) - yy
+        for yy in range(20*y):
+            tx = now -  24*3600 * (i*7+j) - 1000 +yy
             os.system(f"""
 echo . >> file
 git add .
