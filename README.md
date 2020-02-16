@@ -1,3 +1,24 @@
+## result 
+
+**issue with upside down **
+
+![img](./img.png)
+
+## pattern
+
+```
+..9...................99...........................
+..9...................99...........................
+..9...................99...........................
+..9.999......9999.9...99...........................
+..99..99....99...9.................................
+..99...99...99...99...99...........................
+..99...99....9999.99..99...........................
+```
+
+## code
+
+```python
 #!/usr/bin/env python3
 import  os
 import time
@@ -48,3 +69,22 @@ os.system(f"""
 git remote add origin git@github.com:{username}/{repo}.git
 git push -u origin master
 """)    
+
+```
+
+## usage
+
+1. create your pattern
+2. set your username and empty repository name on github. also you can set a `coef` to generate more commits.
+3. save python code in a file (say `pattern.py`)
+4. change file's access rights
+
+```shell
+chmod +x ./pattern.py
+```
+
+5. run it
+
+```shell
+./pattern.py
+```
