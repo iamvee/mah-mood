@@ -55,7 +55,7 @@ weekday = datetime.datetime.now().weekday()
 for i, x in enumerate(arrx):
     for j, y in enumerate(x):
         for yy in range(coef * y):
-            tx = now -  24*3600 * (i*7-j+weekday) - yy
+            tx = now -  24*3600 * (i*7-j+weekday-1) - yy
             os.system(f"echo {tx} >> file")
             os.system(f"""
 git add .
