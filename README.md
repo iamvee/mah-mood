@@ -1,6 +1,6 @@
 ## result 
 
-**issue with upside down **
+**issue with upside down**
 
 ![img](./img.png)
 
